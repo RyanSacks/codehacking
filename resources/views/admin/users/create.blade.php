@@ -15,7 +15,7 @@
 
             <div class="form-group">
                 {!! Form::label('email', 'Email:') !!}
-                {!! Form::email('email', null, ['class'=>'form-control']) !!}
+                {!! Form::email('email', null, ['class'=> $errors->first('email') ? 'alert-danger form-control' : 'form-control']) !!}
             </div>
 
             <div class="form-group">
